@@ -1,0 +1,15 @@
+{
+  "semi": true,
+  "tabWidth": 2,
+  "useTabs": false,
+  "htmlWhitespaceSensitivity": "strict",
+  "singleAttributePerLine": true,
+  "overrides": [
+    {
+      "files": "*.js",
+      "options": {
+        "singleQuote": true
+      }
+    }
+  ]
+}

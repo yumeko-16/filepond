@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link
+      href="https://unpkg.com/filepond@^4/dist/filepond.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+  </head>
+  <body>
+    <form action="">
+      <input
+        class="filepond"
+        type="file"
+        name="filepond"
+        multiple
+        data-allow-reorder="true"
+        data-max-file-size="3MB"
+        data-max-files="3"
+      />
+    </form>
+
+    <script>
+      // Get a reference to the file input element
+      const inputElement = document.querySelector('input[type="file"]');
+
+      // Create a FilePond instance
+      const pond = FilePond.create(inputElement);
+    </script>
+  </body>
+</html>
