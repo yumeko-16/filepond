@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <title>FilePond</title>
     <link
       href="https://unpkg.com/filepond@^4/dist/filepond.css"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
+    <script
+      src="/js/main.js"
+      defer
+    ></script>
   </head>
   <body>
     <form action="">
@@ -21,13 +25,5 @@
         data-max-files="3"
       />
     </form>
-
-    <script>
-      // Get a reference to the file input element
-      const inputElement = document.querySelector('input[type="file"]');
-
-      // Create a FilePond instance
-      const pond = FilePond.create(inputElement);
-    </script>
   </body>
 </html>
